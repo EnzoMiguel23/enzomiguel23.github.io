@@ -120,13 +120,14 @@ li:hover {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(35, 35, 35), #fff);
 }
 
 .profile-image {
     width: 150px;
     height: auto;
     border-radius: 50%;
-    border: 4px solid #d870db;
+    border: 4px solid #03009e;
 }
 
 .name-text {
@@ -148,7 +149,7 @@ li:hover {
     height: 50px;
     border-radius: 15px;
     border: none;
-    background-color: #d870db;
+    background-color: #03009e;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     margin-top: 35px;
