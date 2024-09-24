@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero-container {
     height: 100vh;
     display: flex;
@@ -29,19 +33,24 @@ nav {
 }
 
 ul {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     list-style: none;
     width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
 }
 
-li {
+.botoes {
     font-family: 'Oswald', sans-serif;
     font-size: 21px;
     color: #fff;
+    text-decoration: none;
 }
 
-li:hover {
+.botoes:hover {
     color: #d870db;
 }
 
@@ -120,20 +129,21 @@ li:hover {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    background: linear-gradient(to bottom, rgb(35, 35, 35), #fff);
+    background: linear-gradient(to bottom, rgb(7, 7, 7), #fff);
 }
 
 .profile-image {
     width: 150px;
     height: auto;
     border-radius: 50%;
-    border: 4px solid #03009e;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0), 0 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .name-text {
     font-family: 'Oswald', sans-serif;
     font-size: 21px;
     margin-top: 15px;
+    color: black;
 }
 
 .profile-text {
@@ -142,6 +152,7 @@ li:hover {
     text-align: center;
     width: 80%;
     margin-top: 10px;
+    color: black;
 }
 
 .profile-button {
@@ -154,6 +165,11 @@ li:hover {
     font-family: 'Oswald', sans-serif;
     margin-top: 35px;
     cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: #2d2b42;
+    transition: 0.5s;
 }
 
 .divider {
@@ -171,10 +187,11 @@ li:hover {
 .icon-item {
     width: 80px;
     height: auto;
+    border-radius: 10px;
 }
 
 .profile-sinopse {
-    width: 430px;
+    width: 400px;
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 17px;
@@ -243,4 +260,71 @@ li:hover {
 .project-text {
     color: white;
     font-family: 'Oswald', sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./photo-1562813733-b31f71025d54.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.136);
+    backdrop-filter: blur(5px);
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background-color: #03009e;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+ button:hover {
+    background-color: #2d2b42;
+    transition: 0.5s;
 }

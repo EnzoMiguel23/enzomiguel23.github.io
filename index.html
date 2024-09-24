@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hero-container">
+    <div class="hero-container" id="home">
         <header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Projetos</li>
-                    <li>Tecnologias</li>
-                    <li>Contato</li>
+                    <li><a class="botoes" href="#home">Home</a></li>
+                    <li><a class="botoes" href="#projetos">Projetos</a></li>
+                    <li><a class="botoes" href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
         </header>
-        <h1>Procurando um desenvolvedor fullstack?</h1>
+        <h1>Procurando por um desenvolvedor?</h1>
         <svg class="arrows">
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -49,42 +48,74 @@
             </div>
           
             <p class="profile-sinopse">
-                Por enquanto apenas sendo lindo
+                Sou um programador iniciante com foco em desenvolvimento web, utilizando principalmente JavaScript, TypeScript e React. Tenho grande paixão por aprender novas tecnologias e estou sempre buscando aprimorar minhas habilidades em programação.
+
+                Apesar de estar no início da minha jornada, dedico-me a criar soluções eficientes, com código limpo e organizado, sempre seguindo as boas práticas de desenvolvimento. Estou ansioso para colocar em prática o que aprendi, enfrentando novos desafios e colaborando em projetos que impactem positivamente o mundo ao meu redor.
+
+                Sigo investindo em meu crescimento como profissional, buscando continuamente novos conhecimentos e oportunidades para expandir minhas habilidades técnicas e contribuir para o sucesso de projetos digitais.
             </p>
         </div>
     </div>
 
-    <div class="content-container">
+    <div class="content-container" id="projetos">
         <div class="project-container">
             <div class="project-content">
                 <div class="position-container right">
                     <div class="project-card">
                         <image class="project-image" src="./Imagem do WhatsApp de 2024-02-23 à(s) 15.16.14_97d0f9f4.jpg" />
                         <p class="project-text">
-                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Este foi o meu primeiro projeto prático como programador. Usando apenas HTML e CSS fiz um site onde está presente uma simulação de venda de ingressos. Nele está presente o trailer do filme, botão para venda e a troca de páginas.
                         </p>
                     </div>
                 </div>
 
                 <div class="position-container left">
                     <div class="project-card card-reverse">
-                        <image class="project-image image-reverse" src="./Imagem do WhatsApp de 2024-02-23 à(s) 15.16.14_97d0f9f4.jpg" />
+                        <image class="project-image image-reverse" src="./image.png" />
                         <p class="project-text">
-                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Este é o meu segundo grande projeto prático. Trata-se de uma aplicação desenvolvida em React que simula a interface do YouTube, com uma API de login integrada e funcionalidade de abertura e fechamento da barra lateral.                        
                         </p>
                     </div>
                 </div>    
 
                 <div class="position-container right">
                     <div class="project-card">
-                        <image class="project-image" src="./wppimage.jpeg" />
+                        <image class="project-image" src="./calculoimc.png" />
                         <p class="project-text">
-                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Neste pequeno projeto fiz um pequeno código usando JavaScript, para cálcular o IMC corporal de uma pessoa.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="content-container"  id="contatos">
+        <div class="form-container">
+            <form
+                action="https://formspree.io/f/xjkbqjgb"
+                method="POST"
+            >
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Nome:
+                    <input type="text" name="name">
+                </label>
+                <label>
+                    Telefone:
+                    <input type="text" name="fone">
+                </label>
+                <label>
+                        Mensagem:
+                        <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
