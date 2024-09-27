@@ -376,15 +376,38 @@ button {
     }
     
     .profile-card {
-        width: 80%;
+        width: 70%;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .profile-image {
+        width: 110px;
+    }
+
+    .name-text {
+        font-size: 18px;
+
+    }
+
+    .profile-text {
+        font-size: 14px;
+    }
+
+    .profile-button {
+        width: 150px;
+        height: 50px;
+    }
+
+    .icon-item {
+        width: 60px;
+    }
+
     .profile-sinopse {
         width: 90%;
-        font-size: 16px;
+        font-size: 13px;
         margin-top: 20px;
         text-align: center;
     }
@@ -418,3 +441,4 @@ button {
         font-size: 13px;
     }
 }
+
