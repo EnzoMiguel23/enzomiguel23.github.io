@@ -361,7 +361,7 @@ button {
     }
 
     .profile-container {
-        height: auto;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -395,12 +395,7 @@ button {
     .profile-text {
         font-size: 14px;
     }
-
-    .profile-button {
-        width: 150px;
-        height: 50px;
-    }
-
+    
     .icon-item {
         width: 60px;
     }
